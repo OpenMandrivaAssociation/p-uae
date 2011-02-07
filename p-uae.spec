@@ -1,3 +1,4 @@
+%define Werror_cflags	%nil
 %define cdrname		cdrtools
 %define cdrmainvers	2.01
 %define cdrvers 	%{cdrmainvers}a38
