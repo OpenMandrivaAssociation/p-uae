@@ -21,6 +21,7 @@ BuildRequires: glib-devel
 BuildRequires: SDL-devel
 BuildRequires: attr-devel
 BuildRequires: GL-devel
+BuildRequires: qt4-devel
 Conflicts: uae
 Obsoletes: uaedev
 Provides: uaedev
