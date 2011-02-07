@@ -8,7 +8,7 @@
 Summary: A software emulation of the Amiga system
 Name: p-uae
 Version: 2.3.1
-Release: %mkrel 1.%{wiprel}.2
+Release: %mkrel 1.%{wiprel}.3
 URL: http://sourceforge.net/projects/uaedev/
 Source0: %{name}-%{version}.%{wiprel}.tar.bz2
 License: GPL
@@ -51,7 +51,17 @@ aclocal
 autoconf
 
 %build
-./build_linux_qt.sh
+
+./bootstrap.sh
+%configure --with-sdl --with-sdl-gl --with-sdl-gfx --with-sdl-sound --enable-drvsnd \
+	--with-gtk \
+	--enable-cd32 \
+	--enable-cd32 \
+	--enable-gayle \
+	--enable-scsi-device --enable-ncr --enable-a2091 \
+	--with-caps --enable-amax
+%make
+
 
 %install
 rm -rf $RPM_BUILD_ROOT
