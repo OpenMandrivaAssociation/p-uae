@@ -2,7 +2,7 @@
 %define cdrname		cdrtools
 %define cdrmainvers	2.01
 %define cdrvers 	%{cdrmainvers}a38
-%define wiprel		git9c62ae3
+%define wiprel		git64fe9d3
 
 # For building with SCSI support
 
@@ -11,7 +11,7 @@ Name: p-uae
 Version: 2.3.1
 Release: %mkrel 1.%{wiprel}.3
 URL: http://sourceforge.net/projects/uaedev/
-Source0: %{name}-%{version}.%{wiprel}.tar.bz2
+Source0: %{name}-%{version}.%{wiprel}.tar.xz
 License: GPL
 Group: Emulators
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
