@@ -9,7 +9,7 @@
 Summary: A software emulation of the Amiga system
 Name: p-uae
 Version: 2.3.1
-Release: %mkrel 1.%{wiprel}.3
+Release: %mkrel 1.%{wiprel}.4
 URL: http://sourceforge.net/projects/uaedev/
 Source0: %{name}-%{version}.%{wiprel}.tar.xz
 License: GPL
