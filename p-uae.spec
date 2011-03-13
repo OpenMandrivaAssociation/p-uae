@@ -15,14 +15,9 @@ Source0: %{name}-%{version}.%{wiprel}.tar.xz
 License: GPL
 Group: Emulators
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
-BuildRequires: X11-devel
-BuildRequires: gtk+-devel
 BuildRequires: gtk+2-devel
-BuildRequires: glib-devel
 BuildRequires: SDL-devel
-BuildRequires: attr-devel
 BuildRequires: GL-devel
-BuildRequires: qt4-devel
 Conflicts: uae
 Obsoletes: uaedev
 Provides: uaedev
@@ -54,14 +49,14 @@ autoconf
 %build
 
 ./bootstrap.sh
-%configure --with-sdl --with-sdl-gl --with-sdl-gfx --with-sdl-sound --enable-drvsnd \
+%configure2_5x \
+	 --with-sdl --with-sdl-gl --with-sdl-gfx --with-sdl-sound --enable-drvsnd \
 	--with-gtk \
-	--enable-cd32 \
 	--enable-cd32 \
 	--enable-gayle \
 	--enable-scsi-device --enable-ncr --enable-a2091 \
 	--with-caps --enable-amax
-%make
+make
 
 
 %install
