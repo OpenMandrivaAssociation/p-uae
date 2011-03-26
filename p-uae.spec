@@ -55,7 +55,7 @@ autoconf
 	--enable-cd32 \
 	--enable-gayle \
 	--enable-scsi-device --enable-ncr --enable-a2091 \
-	--with-caps --enable-amax
+	--with-caps --enable-amax --disable-jit
 make
 
 
