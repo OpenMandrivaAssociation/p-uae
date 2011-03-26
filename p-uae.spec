@@ -15,7 +15,7 @@ Source0: %{name}-%{version}.%{wiprel}.tar.xz
 License: GPL
 Group: Emulators
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
-BuildRequires: qt4-devel
+BuildRequires: gtk-devel
 BuildRequires: SDL-devel
 BuildRequires: GL-devel
 Conflicts: uae
@@ -51,7 +51,7 @@ autoconf
 ./bootstrap.sh
 %configure2_5x \
 	 --with-sdl --with-sdl-gl --with-sdl-gfx --with-sdl-sound --enable-drvsnd \
-	--with-qt \
+	--with-gtk \
 	--enable-cd32 \
 	--enable-gayle \
 	--enable-scsi-device --enable-ncr --enable-a2091 \
