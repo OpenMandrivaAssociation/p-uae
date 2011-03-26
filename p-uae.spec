@@ -15,7 +15,7 @@ Source0: %{name}-%{version}.%{wiprel}.tar.xz
 License: GPL
 Group: Emulators
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
-BuildRequires: gtk+2-devel
+BuildRequires: qt4-devel
 BuildRequires: SDL-devel
 BuildRequires: GL-devel
 Conflicts: uae
