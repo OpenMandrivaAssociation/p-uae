@@ -2,7 +2,7 @@
 %define cdrname		cdrtools
 %define cdrmainvers	2.01
 %define cdrvers 	%{cdrmainvers}a38
-%define wiprel		gita2b6937
+%define wiprel		git0a2dd98
 
 # For building with SCSI support
 
@@ -51,7 +51,7 @@ autoconf
 ./bootstrap.sh
 %configure2_5x \
 	 --with-sdl --with-sdl-gl --with-sdl-gfx --with-sdl-sound --enable-drvsnd \
-	--with-gtk \
+	--with-qt \
 	--enable-cd32 \
 	--enable-gayle \
 	--enable-scsi-device --enable-ncr --enable-a2091 \
