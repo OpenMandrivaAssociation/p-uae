@@ -2,7 +2,7 @@
 %define cdrname		cdrtools
 %define cdrmainvers	2.01
 %define cdrvers 	%{cdrmainvers}a38
-%define wiprel		git0a2dd98
+%define wiprel		git45efada
 
 # For building with SCSI support
 
