@@ -2,13 +2,13 @@
 %define cdrname		cdrtools
 %define cdrmainvers	2.01
 %define cdrvers 	%{cdrmainvers}a38
-%define wiprel		git45efada
+%define wiprel		gitf2fc773b75
 
 # For building with SCSI support
 
 Summary: A software emulation of the Amiga system
 Name: p-uae
-Version: 2.3.2
+Version: 2.3.3
 Release: %mkrel 1.%{wiprel}.1
 URL: http://sourceforge.net/projects/uaedev/
 Source0: %{name}-%{version}.%{wiprel}.tar.xz
