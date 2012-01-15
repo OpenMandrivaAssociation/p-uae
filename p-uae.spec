@@ -17,7 +17,7 @@ Group: Emulators
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
 BuildRequires: gtk-devel
 BuildRequires: SDL-devel
-BuildRequires: GL-devel zlib-devel
+BuildRequires: GL-devel zlib-devel gtk+-devel
 Conflicts: uae
 Obsoletes: uaedev
 Provides: uaedev
