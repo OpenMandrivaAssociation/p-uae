@@ -52,8 +52,6 @@ autoconf
 %configure2_5x \
 	--with-sdl --with-sdl-gl --with-sdl-gfx --with-sdl-sound --enable-drvsnd \
 	--with-sdl-gui \
-	--without-qt \
-	--without-gtk \
 	--enable-cd32 \
 	--enable-gayle \
 	--enable-scsi-device --enable-ncr --enable-a2091 \
