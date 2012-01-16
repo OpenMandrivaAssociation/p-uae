@@ -17,7 +17,7 @@ Group: Emulators
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
 BuildRequires: gtk-devel
 BuildRequires: SDL-devel
-BuildRequires: GL-devel zlib-devel gtk+-devel
+BuildRequires: GL-devel zlib-devel gtk+-devel qt4-devel
 Conflicts: uae
 Obsoletes: uaedev
 Provides: uaedev
@@ -51,7 +51,7 @@ autoconf
 ./bootstrap.sh
 %configure2_5x \
 	 --with-sdl --with-sdl-gl --with-sdl-gfx --with-sdl-sound --enable-drvsnd \
-	--with-gtk \
+	--with-qt \
 	--enable-cd32 \
 	--enable-gayle \
 	--enable-scsi-device --enable-ncr --enable-a2091 \
