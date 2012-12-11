@@ -9,7 +9,7 @@
 Summary: A software emulation of the Amiga system
 Name: p-uae
 Version: 2.3.3
-Release: %mkrel 1.%{wiprel}.1.1
+Release: %mkrel 1.%{wiprel}.1.2
 URL: http://sourceforge.net/projects/uaedev/
 Source0: %{name}-%{version}.%{wiprel}.tar.xz
 License: GPL
@@ -18,6 +18,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-root
 BuildRequires: gtk-devel
 BuildRequires: SDL-devel
 BuildRequires: GL-devel zlib-devel gtk+-devel qt4-devel
+BuildRequires: mesaglu-devel
 Conflicts: uae
 Obsoletes: uaedev
 Provides: uaedev
@@ -90,4 +91,51 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/applications/mandriva-%{name}.desktop
 %doc docs/*
 
+
+
+
+%changelog
+* Mon Jan 16 2012 Zombie Ryushu <ryushu@mandriva.org> 2.3.3-1.gitf2fc773b75.1.1mdv2011.0
++ Revision: 761851
+- Use SDL for GUI
+- Use SDL for GUI
+- Use SDL for GUI
+- Use SDL for GUI
+
+* Mon Jan 16 2012 Zombie Ryushu <ryushu@mandriva.org> 2.3.3-1.gitf2fc773b75.1
++ Revision: 761657
+- QT Build
+- zlib dependancy
+- zlib dependancy
+- Upgrade to 2.3.3
+- update to latest GIT
+- Back to GTK
+- disable jit
+- Upgrade GIT revision and switch to QT
+- Upgrade GIT revision and switch to QT
+
+* Wed Mar 23 2011 Zombie Ryushu <ryushu@mandriva.org> 2.3.2-1.gita2b6937.1
++ Revision: 647758
+- Upgrade to latest git
+
+* Sun Mar 13 2011 Funda Wang <fwang@mandriva.org> 2.3.2-1.git6ccc562.1
++ Revision: 644149
+- cleanup BRs
+- rebuild to obsolete old packages
+
+  + Zombie Ryushu <ryushu@mandriva.org>
+    - Update to 2.3.2
+    - Upgrade to git7da6740
+    - update to latest GIT release
+    - update latest git
+    - Include the GitHub Build in the Beta ID
+
+* Mon Feb 07 2011 Zombie Ryushu <ryushu@mandriva.org> 2.3.1-1.beta.3
++ Revision: 636765
+- Enable GTK mode
+
+* Mon Feb 07 2011 Zombie Ryushu <ryushu@mandriva.org> 2.3.1-1.beta.2
++ Revision: 636560
+- Fix qt4 dep
+- imported package p-uae
 
