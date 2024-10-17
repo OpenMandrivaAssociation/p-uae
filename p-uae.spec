@@ -13,7 +13,7 @@ Version:	2.3.3
 Release:	1.%{wiprel}.2
 License:	GPLv2+
 Group:		Emulators
-Url:		http://sourceforge.net/projects/uaedev/
+Url:		https://sourceforge.net/projects/uaedev/
 Source0:	%{name}-%{version}.%{wiprel}.tar.xz
 Source10:	%{name}.rpmlintrc
 BuildRequires:	qt4-devel
