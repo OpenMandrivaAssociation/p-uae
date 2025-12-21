@@ -16,6 +16,11 @@ Group:		Emulators
 Url:		https://sourceforge.net/projects/uaedev/
 Source0:	%{name}-%{version}.%{wiprel}.tar.xz
 Source10:	%{name}.rpmlintrc
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	qt4-devel
 BuildRequires:	pkgconfig(gl)
 BuildRequires:	pkgconfig(glu)
